@@ -30,11 +30,24 @@
         </plugin>
 	</plugins>
   </build>
+ 	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://maven.zcw.com/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>releases</id>
+			<name>Nexus Release Repository</name>
+			<url>http://maven.zcw.com/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
+	
   <dependencies>
   	<dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>1.7.5</version>
+        <version>1.7.7</version>
     </dependency>
   </dependencies>
 </project>
